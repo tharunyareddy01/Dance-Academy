@@ -1,0 +1,630 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #061c16;
+    color: #fff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(4, 24, 19, 0.95);
+
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo span {
+    font-family: "Cinzel", serif;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #d4af37;
+
+    letter-spacing: 3px;
+}
+
+.logo small {
+    margin-top: 5px;
+
+    font-size: 8px;
+
+    color: #eee;
+
+    letter-spacing: 4px;
+}
+
+
+/* NAV LINKS */
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #eee;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #d4af37;
+}
+
+.navbar nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: #d4af37;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover::after,
+.navbar nav a.active::after {
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.mentor-hero {
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(30, 100, 75, 0.35),
+            transparent 55%
+        ),
+        #061c16;
+}
+
+.mentor-hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            rgba(212, 175, 55, 0.15) 1px,
+            transparent 1px
+        );
+
+    background-size: 35px 35px;
+
+    opacity: 0.4;
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 1;
+
+    padding: 30px;
+}
+
+.small-title {
+    color: #d4af37;
+
+    letter-spacing: 5px;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(45px, 7vw, 75px);
+
+    letter-spacing: 3px;
+}
+
+.hero-content h1 span {
+    color: #d4af37;
+}
+
+.hero-content > p:last-child {
+    margin-top: 15px;
+
+    color: #c7d3ce;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   MENTORS SECTION
+========================= */
+
+.mentors-section {
+    padding: 90px 7%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #061c16,
+            #09271e
+        );
+}
+
+
+/* HEADING */
+
+.section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.section-heading > p:first-child {
+    color: #d4af37;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-family: "Cinzel", serif;
+
+    font-size: 38px;
+
+    color: #fff;
+}
+
+.section-heading h2 span {
+    color: #d4af37;
+}
+
+.gold-line {
+    width: 70px;
+    height: 2px;
+
+    background: #d4af37;
+
+    margin: 20px auto;
+}
+
+.description {
+    color: #aebdb7;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MENTOR CONTAINER
+========================= */
+
+.mentor-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.mentor-card {
+    display: flex;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20, 72, 54, 0.8),
+            rgba(5, 29, 22, 0.95)
+        );
+
+    border: 1px solid rgba(212, 175, 55, 0.25);
+
+    border-radius: 18px;
+
+    transition: 0.4s;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.mentor-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 45px rgba(212, 175, 55, 0.18);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.mentor-image {
+    position: relative;
+
+    width: 42%;
+
+    min-height: 360px;
+
+    overflow: hidden;
+}
+
+.mentor-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.mentor-card:hover .mentor-image img {
+    transform: scale(1.06);
+}
+
+
+/* BADGE */
+
+.dance-badge {
+    position: absolute;
+
+    bottom: 15px;
+    left: 15px;
+
+    padding: 7px 13px;
+
+    background: rgba(4, 24, 19, 0.9);
+
+    border: 1px solid #d4af37;
+
+    color: #d4af37;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.mentor-content {
+    width: 58%;
+
+    padding: 30px;
+}
+
+.mentor-content h3 {
+    font-family: "Cinzel", serif;
+
+    font-size: 23px;
+
+    color: #fff;
+
+    margin-bottom: 7px;
+}
+
+.mentor-content h4 {
+    color: #d4af37;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+
+.experience {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: rgba(212, 175, 55, 0.08);
+
+    color: #e4c75c;
+
+    font-size: 11px;
+
+    margin-bottom: 18px;
+}
+
+.mentor-content p {
+    color: #aebdb7;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.mentor-btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 25px;
+
+    color: #d4af37;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.mentor-btn:hover {
+    background: #d4af37;
+
+    color: #061c16;
+
+    box-shadow:
+        0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+
+/* =========================
+   GURU QUOTE
+========================= */
+
+.guru-section {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(20, 90, 65, 0.4),
+            transparent 65%
+        );
+}
+
+.guru-symbol {
+    font-size: 35px;
+
+    color: #d4af37;
+
+    margin-bottom: 20px;
+}
+
+.guru-section h2 {
+    max-width: 750px;
+
+    margin: auto;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 28px;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+}
+
+.guru-section p {
+    margin-top: 20px;
+
+    color: #d4af37;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background: #04150f;
+
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-logo {
+    font-family: "Cinzel", serif;
+
+    font-size: 20px;
+
+    color: #d4af37;
+
+    letter-spacing: 3px;
+}
+
+.footer-logo span {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+    color: #eee;
+
+    margin-top: 5px;
+}
+
+footer > p {
+    color: #9aa9a3;
+
+    font-size: 12px;
+
+    margin-top: 15px;
+}
+
+.copyright {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .mentor-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .mentor-hero {
+        min-height: 300px;
+    }
+
+    .mentor-card {
+        flex-direction: column;
+    }
+
+    .mentor-image {
+        width: 100%;
+
+        height: 350px;
+
+        min-height: 0;
+    }
+
+    .mentor-content {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .guru-section h2 {
+        font-size: 21px;
+    }
+}

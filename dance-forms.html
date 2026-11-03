@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dance Forms | Tharunya Dance Academy</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/animations.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet"
+          href="css/dance-forms.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     LOADING SCREEN
+========================================= -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-lotus">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <h2>THARUNYA</h2>
+
+    <p>DANCE ACADEMY</p>
+
+</div>
+
+
+
+<!-- =========================================
+     PARTICLES
+========================================= -->
+
+<div class="particles"
+     id="particles">
+</div>
+
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar">
+
+
+    <div class="logo">
+
+        <div class="logo-symbol">
+            🪷
+        </div>
+
+        <div class="logo-text">
+
+            <h1>THARUNYA</h1>
+
+            <span>DANCE ACADEMY</span>
+
+        </div>
+
+    </div>
+
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="dance-forms.html"
+           class="active">
+            Dance Forms
+        </a>
+
+        <a href="about.html">
+            Our Story
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="classes.html">
+            Classes
+        </a>
+
+        <a href="mentors.html" >
+                Mentors
+            </a>
+
+        <a href="join.html">
+            Join Us
+        </a>
+
+    </nav>
+
+
+
+    <div class="live-status">
+
+        <span class="live-dot"></span>
+
+        <span>LIVE</span>
+
+    </div>
+
+
+
+    <button class="menu-btn"
+            id="menuBtn">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =========================================
+     PAGE HERO
+========================================= -->
+
+<section class="forms-hero">
+
+
+    <div class="forms-orbit orbit-1"></div>
+
+    <div class="forms-orbit orbit-2"></div>
+
+    <div class="forms-orbit orbit-3"></div>
+
+
+    <div class="forms-hero-content">
+
+        <span class="forms-number">
+            02 / THE TRADITIONS
+        </span>
+
+
+        <p class="forms-eyebrow">
+            ✦ ROOTED IN INDIA ✦
+        </p>
+
+
+        <h2>
+
+            THE LANGUAGE
+            <br>
+
+            OF
+            <span>DANCE</span>
+
+        </h2>
+
+
+        <p>
+
+            Six classical traditions.
+            Thousands of stories.
+            One timeless language of expression.
+
+        </p>
+
+
+        <div class="forms-stat">
+
+            <strong id="formCount">
+                06
+            </strong>
+
+            <span>
+                TRADITIONS TO DISCOVER
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="forms-symbol">
+
+        <div class="symbol-ring"></div>
+
+        <div class="symbol-ring ring-small"></div>
+
+        <span>नृत्य</span>
+
+        <p>
+            NRITYA
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     DANCE DISCOVERY
+========================================= -->
+
+<section class="dance-discovery">
+
+
+    <div class="discovery-header">
+
+        <div>
+
+            <span class="section-number">
+                01
+            </span>
+
+            <p>
+                DISCOVER YOUR EXPRESSION
+            </p>
+
+            <h2>
+
+                CHOOSE YOUR
+                <span>RHYTHM</span>
+
+            </h2>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="dance-search">
+
+            <input
+                type="text"
+                id="danceSearch"
+                placeholder="Search dance form...">
+
+            <span>⌕</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         FILTERS
+    ====================================== -->
+
+    <div class="dance-filters">
+
+        <button
+            class="filter-btn active"
+            data-filter="all">
+
+            All
+
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="south">
+
+            South India
+
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="north">
+
+            North India
+
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="east">
+
+            East India
+
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="west">
+
+            West India
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================
+         DANCE CARDS
+    ====================================== -->
+
+    <div class="forms-grid"
+         id="formsGrid">
+
+
+
+        <!-- BHARATANATYAM -->
+
+        <article
+            class="form-card"
+            data-region="south"
+            data-name="bharatanatyam">
+
+
+            <div class="form-image">
+
+                <img
+                    src="images/bharatanatyam.jpeg"
+                    alt="Bharatanatyam dancer">
+
+            </div>
+
+
+            <div class="form-glow"></div>
+
+
+            <div class="form-number">
+                01
+            </div>
+
+
+            <div class="form-content">
+
+                <span>
+                    TAMIL NADU
+                </span>
+
+                <h3>
+                    Bharatanatyam
+                </h3>
+
+                <p>
+                    Geometry • Devotion • Expression
+                </p>
+
+                <button
+                    class="explore-form"
+                    data-form="Bharatanatyam">
+
+                    Explore
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- KUCHIPUDI -->
+
+        <article
+            class="form-card"
+            data-region="south"
+            data-name="kuchipudi">
+
+
+            <div class="form-image">
+
+                <img
+                    src="images/kuchipudi.jpeg"
+                    alt="Kuchipudi dancer">
+
+            </div>
+
+
+            <div class="form-glow"></div>
+
+
+            <div class="form-number">
+                02
+            </div>
+
+
+            <div class="form-content">
+
+                <span>
+                    ANDHRA PRADESH
+                </span>
+
+                <h3>
+                    Kuchipudi
+                </h3>
+
+                <p>
+                    Energy • Story • Grace
+                </p>
+
+                <button
+                    class="explore-form"
+                    data-form="Kuchipudi">
+
+                    Explore
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- KATHAK -->
+
+        <article
+            class="form-card"
+            data-region="north"
+            data-name="kathak">
+
+
+            <div class="form-image">
+
+                <img
+                    src="images/kathak.jpeg"
+                    alt="Kathak dancer">
+
+            </div>
+
+
+            <div class="form-glow"></div>
+
+
+            <div class="form-number">
+                03
+            </div>
+
+
+            <div class="form-content">
+
+                <span>
+                    NORTH INDIA
+                </span>
+
+                <h3>
+                    Kathak
+                </h3>
+
+                <p>
+                    Footwork • Spins • Storytelling
+                </p>
+
+                <button
+                    class="explore-form"
+                    data-form="Kathak">
+
+                    Explore
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ODISSI -->
+
+        <article
+            class="form-card"
+            data-region="east"
+            data-name="odissi">
+
+
+            <div class="form-image">
+
+                <img
+                    src="images/odissi.jpeg"
+                    alt="Odissi dancer">
+
+            </div>
+
+
+            <div class="form-glow"></div>
+
+
+            <div class="form-number">
+                04
+            </div>
+
+
+            <div class="form-content">
+
+                <span>
+                    ODISHA
+                </span>
+
+                <h3>
+                    Odissi
+                </h3>
+
+                <p>
+                    Sculpture • Poetry • Devotion
+                </p>
+
+                <button
+                    class="explore-form"
+                    data-form="Odissi">
+
+                    Explore
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MOHINIYATTAM -->
+
+        <article
+            class="form-card"
+            data-region="south"
+            data-name="mohiniyattam">
+
+
+            <div class="form-image">
+
+                <img
+                    src="images/mohiniyattam.jpeg"
+                    alt="Mohiniyattam dancer">
+
+            </div>
+
+
+            <div class="form-glow"></div>
+
+
+            <div class="form-number">
+                05
+            </div>
+
+
+            <div class="form-content">
+
+                <span>
+                    KERALA
+                </span>
+
+                <h3>
+                    Mohiniyattam
+                </h3>
+
+                <p>
+                    Softness • Grace • Feminine Beauty
+                </p>
+
+                <button
+                    class="explore-form"
+                    data-form="Mohiniyattam">
+
+                    Explore
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MANIPURI -->
+
+        <article
+            class="form-card"
+            data-region="east"
+            data-name="manipuri">
+
+
+            <div class="form-image">
+
+                <img
+                    src="images/manipuri.jpeg"
+                    alt="Manipuri dancer">
+
+            </div>
+
+
+            <div class="form-glow"></div>
+
+
+            <div class="form-number">
+                06
+            </div>
+
+
+            <div class="form-content">
+
+                <span>
+                    MANIPUR
+                </span>
+
+                <h3>
+                    Manipuri
+                </h3>
+
+                <p>
+                    Devotion • Flow • Spirituality
+                </p>
+
+                <button
+                    class="explore-form"
+                    data-form="Manipuri">
+
+                    Explore
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+
+    <!-- NO RESULT -->
+
+    <div class="no-results"
+         id="noResults">
+
+        <span>🪷</span>
+
+        <h3>
+            No tradition found
+        </h3>
+
+        <p>
+            Try another dance form.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     QUOTE SECTION
+========================================= -->
+
+<section class="dance-quote">
+
+
+    <div class="quote-symbol">
+        “
+    </div>
+
+
+    <p>
+
+        WHEN THE BODY MOVES,
+        <br>
+
+        THE SOUL
+        <span>SPEAKS.</span>
+
+    </p>
+
+
+    <small>
+        — THARUNYA DANCE ACADEMY
+    </small>
+
+
+</section>
+
+
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="forms-cta">
+
+
+    <div class="cta-glow"></div>
+
+
+    <span>
+        YOUR RHYTHM IS WAITING
+    </span>
+
+
+    <h2>
+
+        FIND YOUR
+        <span>FORM.</span>
+
+    </h2>
+
+
+    <p>
+
+        Every dancer begins with a single step.
+
+    </p>
+
+
+    <a
+        href="join.html"
+        class="btn btn-primary">
+
+        Begin Your Journey
+
+        <span>→</span>
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <span>🪷</span>
+
+        <h2>
+            THARUNYA
+        </h2>
+
+        <p>
+            DANCE ACADEMY
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+
+        © 2026 Tharunya Dance Academy.
+        All Rights Reserved.
+
+    </p>
+
+
+    <p class="footer-tagline">
+
+        Tradition • Grace • Expression
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script src="js/main.js"></script>
+
+<script src="js/dance-forms.js"></script>
+
+
+</body>
+
+</html>

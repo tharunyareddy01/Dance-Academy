@@ -1,0 +1,1081 @@
+/* =========================================
+   THARUNYA DANCE ACADEMY
+   CLASSES PAGE
+========================================= */
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.classes-hero {
+
+    min-height: 90vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 130px 9% 80px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(0, 208, 132, 0.13),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #03140f,
+            #041d15
+        );
+
+}
+
+
+.classes-hero-content {
+
+    width: 55%;
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.hero-number {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.small-heading {
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    margin-top: 25px;
+
+}
+
+
+.classes-hero h1 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+
+}
+
+
+.classes-hero h1 span {
+
+    display: block;
+
+    color: var(--emerald-bright);
+
+    text-shadow:
+
+        0 0 15px rgba(0, 208, 132, 0.5),
+
+        0 0 50px rgba(0, 208, 132, 0.15);
+
+}
+
+
+.classes-hero-content > p:not(.small-heading) {
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    max-width: 550px;
+
+}
+
+
+.class-scroll {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 35px;
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    border-bottom: 1px solid rgba(214,181,106,.3);
+
+    padding-bottom: 10px;
+
+}
+
+
+.class-scroll span {
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================
+   HERO SYMBOL
+========================================= */
+
+.hero-dance-symbol {
+
+    position: absolute;
+
+    right: 8%;
+
+    width: 42vw;
+
+    height: 42vw;
+
+    max-width: 550px;
+
+    max-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.symbol-ring {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(57,255,156,.18);
+
+}
+
+
+.ring-a {
+
+    width: 100%;
+
+    height: 100%;
+
+    animation: rotateClassRing 25s linear infinite;
+
+}
+
+
+.ring-b {
+
+    width: 72%;
+
+    height: 72%;
+
+    border-color: rgba(214,181,106,.2);
+
+}
+
+
+.ring-c {
+
+    width: 48%;
+
+    height: 48%;
+
+    border-style: dashed;
+
+    animation: rotateClassRing 15s linear infinite reverse;
+
+}
+
+
+.mudra-symbol {
+
+    width: 210px;
+
+    height: 210px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 85px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(0,208,132,.16),
+            rgba(3,20,15,.3)
+        );
+
+    border: 1px solid rgba(57,255,156,.25);
+
+    box-shadow:
+
+        0 0 40px rgba(0,208,132,.15),
+
+        inset 0 0 40px rgba(0,208,132,.08);
+
+    animation: classPulse 4s ease-in-out infinite;
+
+}
+
+
+@keyframes rotateClassRing {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes classPulse {
+
+    0%,100% {
+        transform: scale(1);
+        box-shadow:
+            0 0 40px rgba(0,208,132,.15);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow:
+            0 0 70px rgba(0,208,132,.28);
+    }
+
+}
+
+
+
+/* =========================================
+   GLOW ORBS
+========================================= */
+
+.classes-glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.glow-one {
+
+    width: 300px;
+
+    height: 300px;
+
+    background: rgba(0,208,132,.08);
+
+    filter: blur(100px);
+
+    right: 20%;
+
+    top: 20%;
+
+}
+
+
+.glow-two {
+
+    width: 200px;
+
+    height: 200px;
+
+    background: rgba(214,181,106,.06);
+
+    filter: blur(80px);
+
+    right: 5%;
+
+    bottom: 5%;
+
+}
+
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.class-intro {
+
+    padding: 120px 10%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+    background: #041a13;
+
+}
+
+
+.section-label {
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    margin: 12px 0 25px;
+
+}
+
+
+.class-intro h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(35px,4vw,55px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+}
+
+
+.class-intro h2 span {
+
+    display: block;
+
+    color: var(--emerald-bright);
+
+}
+
+
+.intro-description {
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    max-width: 500px;
+
+}
+
+
+
+/* =========================================
+   FILTER SECTION
+========================================= */
+
+.class-filter-section {
+
+    padding: 120px 8%;
+
+    background: #020e0a;
+
+}
+
+
+.filter-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.filter-heading > span {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.filter-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.filter-btn {
+
+    background: transparent;
+
+    border: 1px solid rgba(57,255,156,.15);
+
+    color: var(--text-muted);
+
+    padding: 10px 16px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    color: var(--forest);
+
+    background: var(--neon-green);
+
+    border-color: var(--neon-green);
+
+    box-shadow: 0 0 20px rgba(57,255,156,.25);
+
+}
+
+
+
+/* =========================================
+   CLASS GRID
+========================================= */
+
+.classes-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+
+}
+
+
+.class-card {
+
+    min-height: 390px;
+
+    position: relative;
+
+    padding: 35px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(57,255,156,.1);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(6,75,54,.28),
+            rgba(3,20,15,.7)
+        );
+
+    transition: .5s ease;
+
+}
+
+
+.class-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(0,208,132,.06);
+
+    filter: blur(50px);
+
+    right: -70px;
+
+    top: -70px;
+
+}
+
+
+.class-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(57,255,156,.5);
+
+    box-shadow:
+
+        0 0 30px rgba(0,208,132,.12),
+
+        0 20px 50px rgba(0,0,0,.3);
+
+}
+
+
+.class-card-number {
+
+    position: absolute;
+
+    right: 25px;
+
+    top: 25px;
+
+    color: rgba(214,181,106,.5);
+
+    font-family: "Cinzel",serif;
+
+    font-size: 13px;
+
+}
+
+
+.class-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 30px;
+
+    filter:
+
+        drop-shadow(0 0 8px var(--emerald-bright));
+
+}
+
+
+.class-level {
+
+    color: var(--neon-green);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.class-card h3 {
+
+    font-family: "Cinzel",serif;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    margin: 12px 0 5px;
+
+}
+
+
+.class-card > p {
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.class-line {
+
+    width: 45px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    margin: 30px 0;
+
+}
+
+
+.class-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #80988e;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.class-card > a {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 35px;
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+
+}
+
+
+.class-card > a:hover {
+
+    color: var(--neon-green);
+
+    letter-spacing: 3px;
+
+}
+
+
+.special-card {
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(214,181,106,.08),
+            transparent 35%
+        ),
+
+        rgba(5,30,22,.7);
+
+}
+
+
+
+/* =========================================
+   SCHEDULE
+========================================= */
+
+.schedule-section {
+
+    padding: 130px 10%;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #03140f,
+            #020e0a
+        );
+
+}
+
+
+.schedule-title {
+
+    margin-bottom: 55px;
+
+}
+
+
+.schedule-title p {
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    margin: 12px 0 25px;
+
+}
+
+
+.schedule-title h2 {
+
+    font-family: "Cinzel",serif;
+
+    font-size: clamp(35px,4vw,55px);
+
+    font-weight: 400;
+
+}
+
+
+.schedule-title h2 span {
+
+    color: var(--emerald-bright);
+
+}
+
+
+.schedule-board {
+
+    border-top: 1px solid rgba(57,255,156,.15);
+
+}
+
+
+.schedule-row {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr 130px;
+
+    align-items: center;
+
+    min-height: 85px;
+
+    border-bottom: 1px solid rgba(57,255,156,.08);
+
+    color: #d0e1d9;
+
+    font-family: "Cinzel",serif;
+
+    transition: .3s ease;
+
+}
+
+
+.schedule-row:hover {
+
+    padding-left: 15px;
+
+    background: rgba(0,208,132,.04);
+
+}
+
+
+.schedule-row .day {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.schedule-row small {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-family: "Montserrat",sans-serif;
+
+    font-size: 8px;
+
+    margin-top: 5px;
+
+}
+
+
+.schedule-row strong {
+
+    color: var(--neon-green);
+
+    font-family: "Montserrat",sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-align: right;
+
+}
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.class-cta {
+
+    min-height: 60vh;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(0,208,132,.13),
+            transparent 45%
+        );
+
+}
+
+
+.class-cta > span {
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.class-cta h2 {
+
+    font-family: "Cinzel",serif;
+
+    font-size: clamp(45px,6vw,80px);
+
+    font-weight: 400;
+
+    margin: 20px 0;
+
+}
+
+
+.class-cta h2 strong {
+
+    color: var(--emerald-bright);
+
+    font-weight: 400;
+
+    text-shadow:
+
+        0 0 20px rgba(0,208,132,.4);
+
+}
+
+
+.class-cta p {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.cta-glow {
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(0,208,132,.08);
+
+    filter: blur(100px);
+
+}
+
+
+
+/* =========================================
+   HIDDEN FILTER CARDS
+========================================= */
+
+.class-card.hide {
+
+    display: none;
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px) {
+
+    .classes-hero {
+
+        padding: 130px 7% 80px;
+
+    }
+
+    .classes-hero-content {
+
+        width: 100%;
+
+    }
+
+    .hero-dance-symbol {
+
+        opacity: .2;
+
+        right: -15%;
+
+    }
+
+    .class-intro {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 90px 8%;
+
+    }
+
+    .classes-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .classes-hero {
+
+        min-height: 100vh;
+
+    }
+
+    .classes-hero h1 {
+
+        font-size: 52px;
+
+    }
+
+    .hero-dance-symbol {
+
+        width: 90vw;
+
+        height: 90vw;
+
+        right: -25%;
+
+        opacity: .12;
+
+    }
+
+    .mudra-symbol {
+
+        width: 150px;
+
+        height: 150px;
+
+        font-size: 60px;
+
+    }
+
+    .class-filter-section {
+
+        padding: 80px 6%;
+
+    }
+
+    .filter-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+    .classes-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .schedule-section {
+
+        padding: 90px 7%;
+
+    }
+
+    .schedule-row {
+
+        grid-template-columns: 60px 1fr 80px;
+
+        font-size: 12px;
+
+    }
+
+}

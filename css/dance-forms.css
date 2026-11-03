@@ -1,0 +1,1022 @@
+/* =========================================
+   THARUNYA DANCE ACADEMY
+   DANCE FORMS PAGE
+========================================= */
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.forms-hero {
+
+    min-height: 85vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 9% 90px;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(0, 208, 132, 0.14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(7, 143, 99, 0.1),
+            transparent 35%
+        );
+
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.forms-hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 700px;
+
+}
+
+
+.forms-number {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.forms-eyebrow {
+
+    margin-top: 35px;
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.forms-hero h2 {
+
+    margin-top: 25px;
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(48px, 6vw, 85px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+}
+
+
+.forms-hero h2 span {
+
+    color: var(--emerald-bright);
+
+    text-shadow:
+
+        0 0 15px rgba(0, 208, 132, 0.5),
+
+        0 0 50px rgba(0, 208, 132, 0.15);
+
+}
+
+
+.forms-hero-content > p:not(.forms-eyebrow) {
+
+    margin-top: 30px;
+
+    max-width: 480px;
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================
+   FORM COUNT
+========================================= */
+
+.forms-stat {
+
+    margin-top: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.forms-stat strong {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 35px;
+
+    color: var(--gold);
+
+}
+
+
+.forms-stat span {
+
+    color: var(--text-muted);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================================
+   ORBITS
+========================================= */
+
+.forms-orbit {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(57, 255, 156, 0.08);
+
+}
+
+
+.orbit-1 {
+
+    width: 650px;
+
+    height: 650px;
+
+    right: -180px;
+
+}
+
+
+.orbit-2 {
+
+    width: 480px;
+
+    height: 480px;
+
+    right: -90px;
+
+    border-color: rgba(57, 255, 156, 0.13);
+
+}
+
+
+.orbit-3 {
+
+    width: 300px;
+
+    height: 300px;
+
+    right: 0;
+
+    border-color: rgba(214, 181, 106, 0.12);
+
+}
+
+
+/* =========================================
+   SANSKRIT SYMBOL
+========================================= */
+
+.forms-symbol {
+
+    position: absolute;
+
+    right: 13%;
+
+    width: 270px;
+
+    height: 270px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 2;
+
+}
+
+
+.forms-symbol span {
+
+    font-family: serif;
+
+    font-size: 65px;
+
+    color: var(--emerald-bright);
+
+    text-shadow:
+
+        0 0 15px rgba(0, 208, 132, 0.7),
+
+        0 0 45px rgba(0, 208, 132, 0.3);
+
+}
+
+
+.forms-symbol p {
+
+    margin-top: 8px;
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* =========================================
+   SYMBOL RINGS
+========================================= */
+
+.symbol-ring {
+
+    position: absolute;
+
+    inset: -20px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(57, 255, 156, 0.15);
+
+    animation: symbolRotate 20s linear infinite;
+
+}
+
+
+.ring-small {
+
+    inset: 20px;
+
+    border-style: dashed;
+
+    border-color: rgba(214, 181, 106, 0.15);
+
+    animation-direction: reverse;
+
+    animation-duration: 14s;
+
+}
+
+
+@keyframes symbolRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================
+   DISCOVERY SECTION
+========================================= */
+
+.dance-discovery {
+
+    padding: 130px 8%;
+
+    background: #041a13;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.discovery-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 40px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.discovery-header p {
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    margin: 10px 0 20px;
+
+}
+
+
+.discovery-header h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(35px, 4vw, 55px);
+
+    font-weight: 400;
+
+}
+
+
+.discovery-header h2 span {
+
+    color: var(--emerald-bright);
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.dance-search {
+
+    width: 270px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid rgba(57, 255, 156, 0.2);
+
+    background: rgba(0, 20, 14, 0.5);
+
+    transition: 0.4s ease;
+
+}
+
+
+.dance-search:focus-within {
+
+    border-color: var(--emerald-bright);
+
+    box-shadow:
+        0 0 20px rgba(0, 208, 132, 0.12);
+
+}
+
+
+.dance-search input {
+
+    flex: 1;
+
+    height: 100%;
+
+    padding: 0 15px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--white);
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+}
+
+
+.dance-search input::placeholder {
+
+    color: #5f796d;
+
+}
+
+
+.dance-search span {
+
+    padding-right: 15px;
+
+    color: var(--emerald-bright);
+
+    font-size: 22px;
+
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.dance-filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.filter-btn {
+
+    border: 1px solid rgba(57, 255, 156, 0.15);
+
+    background: transparent;
+
+    color: #7f998d;
+
+    padding: 10px 18px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    color: var(--forest);
+
+    background: var(--neon-green);
+
+    border-color: var(--neon-green);
+
+    box-shadow:
+        0 0 20px rgba(57, 255, 156, 0.25);
+
+}
+
+
+/* =========================================
+   FORMS GRID
+========================================= */
+
+.forms-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+
+    height: 510px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(57, 255, 156, 0.12);
+
+    background: #03140f;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.6s ease,
+        border-color 0.5s ease,
+        box-shadow 0.5s ease;
+
+}
+
+
+.form-card:hover {
+
+    transform: translateY(-12px);
+
+    border-color: rgba(57, 255, 156, 0.6);
+
+    box-shadow:
+
+        0 0 25px rgba(0, 208, 132, 0.15),
+
+        0 25px 60px rgba(0, 0, 0, 0.45);
+
+}
+
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.form-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.form-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.8s ease;
+
+}
+
+
+.form-card:hover .form-image img {
+
+    transform: scale(1.1);
+
+}
+
+
+/* =========================================
+   IMAGE DARK OVERLAY
+========================================= */
+
+.form-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to top,
+            rgba(1, 10, 7, 0.98),
+            rgba(1, 10, 7, 0.15) 65%,
+            rgba(1, 10, 7, 0.1)
+        );
+
+}
+
+
+/* =========================================
+   GREEN CARD GLOW
+========================================= */
+
+.form-glow {
+
+    position: absolute;
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(0, 208, 132, 0.2),
+            transparent 70%
+        );
+
+    top: -100px;
+
+    right: -100px;
+
+    filter: blur(5px);
+
+    transition: 0.6s ease;
+
+    z-index: 2;
+
+}
+
+
+.form-card:hover .form-glow {
+
+    transform: scale(2);
+
+}
+
+
+/* =========================================
+   CARD NUMBER
+========================================= */
+
+.form-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    left: 25px;
+
+    z-index: 4;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 14px;
+
+    color: var(--gold);
+
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.form-content {
+
+    position: absolute;
+
+    left: 28px;
+
+    right: 28px;
+
+    bottom: 28px;
+
+    z-index: 5;
+
+}
+
+
+.form-content > span {
+
+    color: var(--neon-green);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.form-content h3 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 27px;
+
+    font-weight: 400;
+
+    margin: 10px 0;
+
+}
+
+
+.form-content p {
+
+    color: #9db6aa;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   EXPLORE BUTTON
+========================================= */
+
+.explore-form {
+
+    margin-top: 20px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--gold);
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.explore-form b {
+
+    margin-left: 10px;
+
+    font-size: 13px;
+
+}
+
+
+.explore-form:hover {
+
+    color: var(--neon-green);
+
+    text-shadow:
+        0 0 10px var(--neon-green);
+
+}
+
+
+/* =========================================
+   NO RESULTS
+========================================= */
+
+.no-results {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+
+
+.no-results span {
+
+    font-size: 45px;
+
+}
+
+
+.no-results h3 {
+
+    margin-top: 20px;
+
+    font-family: "Cinzel", serif;
+
+    font-weight: 400;
+
+}
+
+
+.no-results p {
+
+    color: var(--text-muted);
+
+    font-size: 11px;
+
+    margin-top: 10px;
+
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.dance-quote {
+
+    min-height: 55vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(0, 208, 132, 0.08),
+            transparent 50%
+        );
+
+}
+
+
+.quote-symbol {
+
+    font-family: Georgia, serif;
+
+    font-size: 100px;
+
+    color: var(--emerald);
+
+    line-height: 0.5;
+
+    opacity: 0.6;
+
+}
+
+
+.dance-quote > p {
+
+    margin-top: 30px;
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(30px, 4vw, 55px);
+
+    line-height: 1.3;
+
+}
+
+
+.dance-quote > p span {
+
+    color: var(--emerald-bright);
+
+    text-shadow:
+        0 0 25px rgba(0, 208, 132, 0.4);
+
+}
+
+
+.dance-quote small {
+
+    margin-top: 30px;
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.forms-cta {
+
+    min-height: 55vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+}
+
+
+.cta-glow {
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(0, 208, 132, 0.15),
+            transparent 65%
+        );
+
+    filter: blur(8px);
+
+}
+
+
+.forms-cta > *:not(.cta-glow) {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.forms-cta > span {
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.forms-cta h2 {
+
+    margin: 20px 0 15px;
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(40px, 6vw, 75px);
+
+    font-weight: 400;
+
+}
+
+
+.forms-cta h2 span {
+
+    color: var(--emerald-bright);
+
+}
+
+
+.forms-cta p {
+
+    color: var(--text-muted);
+
+    font-size: 11px;
+
+    margin-bottom: 30px;
+
+}

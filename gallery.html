@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Tharunya Dance Academy</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Gallery CSS -->
+
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         LOADER
+    ========================================== -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-lotus">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <h2>THARUNYA</h2>
+
+        <p>DANCE ACADEMY</p>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PARTICLES
+    ========================================== -->
+
+    <div class="particles" id="particles"></div>
+
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+
+        <div class="logo">
+
+            <div class="logo-symbol">
+                🪷
+            </div>
+
+
+            <div class="logo-text">
+
+                <h1>THARUNYA</h1>
+
+                <span>DANCE ACADEMY</span>
+
+            </div>
+
+        </div>
+
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dance-forms.html">
+                Dance Forms
+            </a>
+
+            <a href="about.html">
+                Our Story
+            </a>
+
+            <a href="gallery.html" class="active">
+                Gallery
+            </a>
+
+            <a href="classes.html">
+                Classes
+            </a>
+
+            <a href="mentors.html" >
+                Mentors
+            </a>
+
+            <a href="join.html">
+                Join Us
+            </a>
+
+        </nav>
+
+
+
+        <div class="live-status">
+
+            <span class="live-dot"></span>
+
+            <span>LIVE</span>
+
+        </div>
+
+
+
+        <button class="menu-btn" id="menuBtn">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+    </header>
+
+
+
+    <!-- =========================================
+         GALLERY HERO
+    ========================================== -->
+
+    <main>
+
+
+        <section class="gallery-hero">
+
+
+            <div class="gallery-glow glow-one"></div>
+
+            <div class="gallery-glow glow-two"></div>
+
+
+            <div class="gallery-hero-content">
+
+
+                <span class="gallery-number">
+                    04 / GALLERY
+                </span>
+
+
+                <p class="gallery-eyebrow">
+                    ✦ MOMENTS IN MOTION ✦
+                </p>
+
+
+                <h1>
+
+                    EVERY
+
+                    <span>
+                        MOVEMENT
+                    </span>
+
+                    TELLS A
+
+                    <span>
+                        STORY
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    A glimpse into the world of Tharunya —
+                    rehearsals, performances, celebrations
+                    and the beautiful moments between them.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- Floating Sanskrit -->
+
+            <div class="gallery-script">
+
+                <span>नृत्य</span>
+
+                <small>
+                    DANCE
+                </small>
+
+            </div>
+
+
+            <div class="gallery-scroll">
+
+                <span>
+                    SCROLL THROUGH OUR MEMORIES
+                </span>
+
+                <div></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================================
+             GALLERY FILTER
+        ========================================== -->
+
+        <section class="gallery-section">
+
+
+            <div class="gallery-heading">
+
+
+                <div>
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <p>
+                        MOMENTS WE CHERISH
+                    </p>
+
+                    <h2>
+
+                        THE
+
+                        <span>
+                            THARUNYA
+                        </span>
+
+                        ARCHIVE
+
+                    </h2>
+
+                </div>
+
+
+                <div class="gallery-count">
+
+                    <strong id="photoCount">
+                        09
+                    </strong>
+
+                    <span>
+                        MOMENTS
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="gallery-filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all">
+
+                    ALL
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="bharatanatyam">
+
+                    BHARATANATYAM
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="kathak">
+
+                    KATHAK
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="kuchipudi">
+
+                    KUCHIPUDI
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="events">
+
+                    EVENTS
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 PHOTO GRID
+            ========================================== -->
+
+            <div class="gallery-grid" id="galleryGrid">
+
+
+
+                <!-- PHOTO 1 -->
+
+                <article
+                    class="gallery-item large"
+                    data-category="bharatanatyam">
+
+                    <img
+                        src="images/bharatanatyam.jpeg"
+                        alt="Bharatanatyam performance">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Expressions
+                            </h3>
+
+                            <p>
+                                Bharatanatyam
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/bharatanatyam.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 2 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="kathak">
+
+                    <img
+                        src="images/kathak.jpeg"
+                        alt="Kathak dancer">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Rhythm
+                            </h3>
+
+                            <p>
+                                Kathak
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/kathak.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 3 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="kuchipudi">
+
+                    <img
+                        src="images/kuchipudi.jpeg"
+                        alt="Kuchipudi dancer">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Story
+                            </h3>
+
+                            <p>
+                                Kuchipudi
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/kuchipudi.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 4 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="events">
+
+                    <img
+                        src="images/hero-dancer.jpeg"
+                        alt="Academy performance">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                On Stage
+                            </h3>
+
+                            <p>
+                                Academy Event
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/hero-dancer.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 5 -->
+
+                <article
+                    class="gallery-item large"
+                    data-category="events">
+
+                    <img
+                        src="images/kathak.jpeg"
+                        alt="Dance performance">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                The Stage
+                            </h3>
+
+                            <p>
+                                Annual Performance
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/kathak.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 6 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="bharatanatyam">
+
+                    <img
+                        src="images/bharatanatyam.jpeg"
+                        alt="Classical dance">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Devotion
+                            </h3>
+
+                            <p>
+                                Bharatanatyam
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/bharatanatyam.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 7 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="kathak">
+
+                    <img
+                        src="images/kathak.jpeg"
+                        alt="Kathak performance">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            07
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Footwork
+                            </h3>
+
+                            <p>
+                                Kathak
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/kathak.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 8 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="kuchipudi">
+
+                    <img
+                        src="images/kuchipudi.jpeg"
+                        alt="Kuchipudi performance">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            08
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Grace
+                            </h3>
+
+                            <p>
+                                Kuchipudi
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/kuchipudi.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PHOTO 9 -->
+
+                <article
+                    class="gallery-item"
+                    data-category="events">
+
+                    <img
+                        src="images/hero-dancer.jpeg"
+                        alt="Tharunya Academy event">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            09
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Celebration
+                            </h3>
+
+                            <p>
+                                Tharunya Academy
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="view-image"
+                            data-image="images/hero-dancer.jpg">
+
+                            ↗
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             LIVE PERFORMANCE SECTION
+        ========================================== -->
+
+        <section class="performance-section">
+
+
+            <div class="performance-glow"></div>
+
+
+            <div class="performance-content">
+
+
+                <span class="section-number">
+                    02
+                </span>
+
+
+                <p>
+                    THE STAGE IS ALIVE
+                </p>
+
+
+                <h2>
+
+                    WHERE
+
+                    <span>
+                        MOMENTS
+                    </span>
+
+                    BECOME
+
+                    <span>
+                        MEMORIES
+                    </span>
+
+                </h2>
+
+
+                <div class="performance-stats">
+
+
+                    <div>
+
+                        <strong
+                            data-target="48">
+                            0
+                        </strong>
+
+                        <span>
+                            Performances
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong
+                            data-target="850">
+                            0
+                        </strong>
+
+                        <span>
+                            Students
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong
+                            data-target="16">
+                            0
+                        </strong>
+
+                        <span>
+                            Events
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="gallery-cta">
+
+
+            <span>
+                YOUR MOMENT IS WAITING
+            </span>
+
+
+            <h2>
+
+                CREATE YOUR
+
+                <span>
+                    OWN STORY
+                </span>
+
+            </h2>
+
+
+            <a
+                href="join.html"
+                class="btn btn-primary">
+
+                Join Tharunya
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         IMAGE LIGHTBOX
+    ========================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox">
+
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose">
+
+            ×
+
+        </button>
+
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Gallery image">
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <span>🪷</span>
+
+            <h2>
+                THARUNYA
+            </h2>
+
+            <p>
+                DANCE ACADEMY
+            </p>
+
+        </div>
+
+
+        <p class="copyright">
+
+            © 2026 Tharunya Dance Academy.
+            All Rights Reserved.
+
+        </p>
+
+
+        <p class="footer-tagline">
+
+            Tradition • Grace • Expression
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/gallery.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1827 @@
+/* =========================================
+   THARUNYA DANCE ACADEMY
+   MAIN STYLE
+========================================= */
+
+
+/* =========================================
+   COLOR VARIABLES
+========================================= */
+
+:root {
+
+    --forest: #03140f;
+    --forest-light: #06251b;
+
+    --emerald-dark: #064b36;
+    --emerald: #078f63;
+    --emerald-bright: #00d084;
+    --neon-green: #39ff9c;
+
+    --gold: #d6b56a;
+    --gold-light: #f0d890;
+
+    --white: #f3fff8;
+    --text-muted: #9ab3a7;
+
+    --glass: rgba(7, 44, 32, 0.55);
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--forest);
+
+    color: var(--white);
+
+    font-family: "Montserrat", sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   SELECTION
+========================================= */
+
+::selection {
+
+    background: var(--emerald);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--forest);
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--emerald);
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================
+   LOADER
+========================================= */
+
+.loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background: #010b08;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 1s ease;
+
+}
+
+
+.loader h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 28px;
+
+    letter-spacing: 8px;
+
+    margin-top: 30px;
+
+    color: var(--gold);
+
+}
+
+
+.loader p {
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    color: var(--text-muted);
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================================
+   LOTUS LOADER
+========================================= */
+
+.loader-lotus {
+
+    width: 100px;
+
+    height: 70px;
+
+    position: relative;
+
+}
+
+
+.loader-lotus span {
+
+    position: absolute;
+
+    width: 45px;
+
+    height: 70px;
+
+    border-radius: 50% 50% 50% 10%;
+
+    border: 1px solid var(--emerald-bright);
+
+    box-shadow:
+
+        0 0 10px var(--emerald),
+
+        0 0 30px rgba(0, 208, 132, 0.3);
+
+    left: 28px;
+
+    top: 0;
+
+    transform-origin: bottom center;
+
+}
+
+
+.loader-lotus span:nth-child(1) {
+    transform: rotate(-60deg);
+}
+
+.loader-lotus span:nth-child(2) {
+    transform: rotate(-36deg);
+}
+
+.loader-lotus span:nth-child(3) {
+    transform: rotate(-18deg);
+}
+
+.loader-lotus span:nth-child(4) {
+    transform: rotate(18deg);
+}
+
+.loader-lotus span:nth-child(5) {
+    transform: rotate(36deg);
+}
+
+.loader-lotus span:nth-child(6) {
+    transform: rotate(60deg);
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    width: 100%;
+
+    height: 90px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: absolute;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.logo-symbol {
+
+    font-size: 30px;
+
+    filter:
+
+        drop-shadow(0 0 8px var(--emerald-bright))
+
+        drop-shadow(0 0 20px rgba(0, 208, 132, 0.4));
+
+}
+
+
+.logo-text h1 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 17px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.logo-text span {
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    gap: 28px;
+
+}
+
+
+.nav-links a {
+
+    color: #b8cbc2;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    position: relative;
+
+    padding: 8px 0;
+
+    transition: 0.4s ease;
+
+}
+
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+
+    height: 1px;
+
+    left: 0;
+
+    bottom: 0;
+
+    background: var(--neon-green);
+
+    box-shadow: 0 0 8px var(--neon-green);
+
+    transition: 0.4s ease;
+
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+
+    color: var(--neon-green);
+
+    text-shadow: 0 0 12px rgba(57, 255, 156, 0.5);
+
+}
+
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+
+    width: 100%;
+
+}
+
+
+/* LIVE STATUS */
+
+.live-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    border: 1px solid rgba(57, 255, 156, 0.25);
+
+    padding: 8px 13px;
+
+    border-radius: 30px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--neon-green);
+
+    background: rgba(0, 208, 132, 0.05);
+
+}
+
+
+.live-dot {
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: var(--neon-green);
+
+    box-shadow: 0 0 10px var(--neon-green);
+
+    animation: pulse 1.5s infinite;
+
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+
+    display: none;
+
+    background: transparent;
+
+    border: none;
+
+    width: 35px;
+
+}
+
+
+.menu-btn span {
+
+    display: block;
+
+    height: 1px;
+
+    background: var(--neon-green);
+
+    margin: 6px 0;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 100px 8% 50px;
+
+    background:
+
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(0, 208, 132, 0.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 20% 70%,
+            rgba(7, 143, 99, 0.12),
+            transparent 35%
+        );
+
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    width: 52%;
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.eyebrow {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-content h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(40px, 5vw, 75px);
+
+    font-weight: 400;
+
+    line-height: 1.12;
+
+    letter-spacing: 2px;
+
+}
+
+
+.hero-content h2 span {
+
+    color: var(--emerald-bright);
+
+    text-shadow:
+
+        0 0 10px rgba(0, 208, 132, 0.4),
+
+        0 0 35px rgba(0, 208, 132, 0.15);
+
+}
+
+
+.hero-description {
+
+    max-width: 520px;
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    margin: 28px 0 35px;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.4s ease;
+
+}
+
+
+.btn-primary {
+
+    background: var(--emerald);
+
+    color: white;
+
+    border: 1px solid var(--emerald-bright);
+
+    box-shadow:
+
+        0 0 15px rgba(0, 208, 132, 0.2);
+
+}
+
+
+.btn-primary:hover {
+
+    background: var(--emerald-bright);
+
+    color: var(--forest);
+
+    box-shadow:
+
+        0 0 20px rgba(0, 208, 132, 0.5),
+
+        0 0 50px rgba(0, 208, 132, 0.2);
+
+    transform: translateY(-3px);
+
+}
+
+
+.btn-outline {
+
+    border: 1px solid rgba(214, 181, 106, 0.5);
+
+    color: var(--gold);
+
+}
+
+
+.btn-outline:hover {
+
+    border-color: var(--gold);
+
+    background: rgba(214, 181, 106, 0.08);
+
+    box-shadow: 0 0 20px rgba(214, 181, 106, 0.15);
+
+}
+
+
+/* =========================================
+   HERO META
+========================================= */
+
+.hero-meta {
+
+    display: flex;
+
+    gap: 45px;
+
+    margin-top: 55px;
+
+}
+
+
+.hero-meta div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.hero-meta strong {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 25px;
+
+    color: var(--gold);
+
+}
+
+
+.hero-meta span {
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    color: var(--text-muted);
+
+}
+
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+
+    position: absolute;
+
+    right: 8%;
+
+    width: 42vw;
+
+    height: 42vw;
+
+    max-width: 600px;
+
+    max-height: 600px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.dancer-image {
+
+    width: 65%;
+
+    height: 85%;
+
+    position: relative;
+
+    z-index: 3;
+
+    overflow: hidden;
+
+    border-radius: 50% 50% 10% 10%;
+
+    border: 1px solid rgba(57, 255, 156, 0.35);
+
+    box-shadow:
+
+        0 0 30px rgba(0, 208, 132, 0.15),
+
+        0 0 100px rgba(0, 208, 132, 0.08);
+
+}
+
+
+.dancer-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            transparent 40%,
+            rgba(3, 20, 15, 0.7)
+        );
+
+}
+
+
+.dancer-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* RINGS */
+
+.dancer-ring {
+
+    position: absolute;
+
+    border: 1px solid rgba(57, 255, 156, 0.18);
+
+    border-radius: 50%;
+
+}
+
+
+.ring-one {
+
+    width: 90%;
+
+    height: 90%;
+
+}
+
+
+.ring-two {
+
+    width: 72%;
+
+    height: 72%;
+
+    border-color: rgba(214, 181, 106, 0.15);
+
+}
+
+
+.ring-three {
+
+    width: 110%;
+
+    height: 110%;
+
+    border-style: dashed;
+
+    animation: rotateRing 25s linear infinite;
+
+}
+
+
+/* =========================================
+   DANCER LABEL
+========================================= */
+
+.dancer-label {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 20%;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.dancer-label span {
+
+    color: var(--gold);
+
+    font-family: "Cinzel", serif;
+
+}
+
+
+.dancer-label div {
+
+    width: 35px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+}
+
+
+.dancer-label p {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   LOTUS GLOW
+========================================= */
+
+.lotus-glow {
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(0, 208, 132, 0.12),
+            transparent 65%
+        );
+
+    filter: blur(5px);
+
+}
+
+
+/* =========================================
+   HERO CIRCLES
+========================================= */
+
+.hero-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(57, 255, 156, 0.06);
+
+}
+
+
+.circle-one {
+
+    width: 700px;
+
+    height: 700px;
+
+    right: -250px;
+
+    top: 10%;
+
+}
+
+
+.circle-two {
+
+    width: 500px;
+
+    height: 500px;
+
+    right: -100px;
+
+    top: 20%;
+
+}
+
+
+.circle-three {
+
+    width: 300px;
+
+    height: 300px;
+
+    right: 0;
+
+    top: 30%;
+
+}
+
+
+/* =========================================
+   SCROLL INDICATOR
+========================================= */
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: #6e8c7e;
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.scroll-line {
+
+    width: 60px;
+
+    height: 1px;
+
+    background: var(--emerald);
+
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro-section {
+
+    min-height: 75vh;
+
+    padding: 130px 10%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            var(--forest),
+            #041d15
+        );
+
+}
+
+
+.section-number {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.section-heading > p,
+.section-top p {
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    margin: 10px 0 25px;
+
+}
+
+
+.section-heading h2,
+.section-top h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(35px, 4vw, 55px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+}
+
+
+.section-heading h2 span,
+.section-top h2 span {
+
+    color: var(--emerald-bright);
+
+}
+
+
+.large-text {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 25px;
+
+    line-height: 1.7;
+
+    color: #d9eee4;
+
+    margin-bottom: 25px;
+
+}
+
+
+.intro-content > p:not(.large-text) {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    line-height: 2;
+
+    max-width: 500px;
+
+}
+
+
+.text-link {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid rgba(214, 181, 106, 0.3);
+
+    padding-bottom: 8px;
+
+}
+
+
+.text-link span {
+
+    margin-left: 10px;
+
+}
+
+
+/* =========================================
+   DANCE PREVIEW
+========================================= */
+
+.dance-preview {
+
+    padding: 120px 8%;
+
+    background: #041a13;
+
+}
+
+
+.section-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 55px;
+
+}
+
+
+.view-all {
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.dance-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.dance-card {
+
+    height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(57, 255, 156, 0.1);
+
+    transition: 0.6s ease;
+
+}
+
+
+.card-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.card-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.8s ease;
+
+}
+
+
+.card-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to top,
+            rgba(1, 12, 8, 0.95),
+            rgba(1, 12, 8, 0.1) 70%
+        );
+
+}
+
+
+.dance-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: var(--emerald-bright);
+
+    box-shadow:
+
+        0 0 25px rgba(0, 208, 132, 0.2),
+
+        0 20px 50px rgba(0, 0, 0, 0.4);
+
+}
+
+
+.dance-card:hover .card-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+.card-content {
+
+    position: absolute;
+
+    left: 30px;
+
+    right: 30px;
+
+    bottom: 30px;
+
+}
+
+
+.card-content > span {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+}
+
+
+.card-content h3 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 25px;
+
+    margin: 12px 0;
+
+}
+
+
+.card-content p {
+
+    color: #a8bfb4;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.card-content a {
+
+    display: inline-block;
+
+    color: var(--neon-green);
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    margin-top: 20px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   LIVE ACADEMY
+========================================= */
+
+.live-academy {
+
+    position: relative;
+
+    padding: 130px 10%;
+
+    overflow: hidden;
+
+    background: #020e0a;
+
+}
+
+
+.live-orb {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(0, 208, 132, 0.14),
+            transparent 65%
+        );
+
+    left: -200px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+
+.live-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+}
+
+
+.live-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border: 1px solid rgba(57, 255, 156, 0.3);
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--neon-green);
+
+}
+
+
+.live-badge i {
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: var(--neon-green);
+
+    box-shadow: 0 0 10px var(--neon-green);
+
+    animation: pulse 1.5s infinite;
+
+}
+
+
+.live-heading h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: clamp(35px, 4vw, 60px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    margin-top: 25px;
+
+}
+
+
+.live-heading h2 span {
+
+    color: var(--emerald-bright);
+
+}
+
+
+/* LIVE CARD */
+
+.live-card {
+
+    border: 1px solid rgba(57, 255, 156, 0.18);
+
+    background: rgba(5, 38, 28, 0.5);
+
+    padding: 30px;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.live-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--text-muted);
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+
+.status {
+
+    color: var(--neon-green);
+
+}
+
+
+.live-class {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 0;
+
+}
+
+
+.live-class p {
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.live-class h3 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 27px;
+
+    font-weight: 400;
+
+}
+
+
+.live-time {
+
+    text-align: right;
+
+}
+
+
+.live-time strong {
+
+    display: block;
+
+    color: var(--gold);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 20px;
+
+}
+
+
+.live-time span {
+
+    color: var(--text-muted);
+
+    font-size: 8px;
+
+}
+
+
+/* SOUND WAVE */
+
+.sound-wave {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    height: 30px;
+
+}
+
+
+.sound-wave span {
+
+    width: 3px;
+
+    background: var(--emerald-bright);
+
+    box-shadow: 0 0 8px rgba(0, 208, 132, 0.5);
+
+    animation: soundWave 1s ease-in-out infinite;
+
+}
+
+
+.sound-wave span:nth-child(1) {
+    height: 8px;
+}
+
+.sound-wave span:nth-child(2) {
+    height: 18px;
+    animation-delay: .1s;
+}
+
+.sound-wave span:nth-child(3) {
+    height: 25px;
+    animation-delay: .2s;
+}
+
+.sound-wave span:nth-child(4) {
+    height: 15px;
+    animation-delay: .3s;
+}
+
+.sound-wave span:nth-child(5) {
+    height: 27px;
+    animation-delay: .4s;
+}
+
+.sound-wave span:nth-child(6) {
+    height: 12px;
+    animation-delay: .5s;
+}
+
+.sound-wave span:nth-child(7) {
+    height: 22px;
+    animation-delay: .6s;
+}
+
+.sound-wave span:nth-child(8) {
+    height: 9px;
+    animation-delay: .7s;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.final-cta {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    position: relative;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(0, 208, 132, 0.12),
+            transparent 45%
+        );
+
+}
+
+
+.cta-lotus {
+
+    font-size: 65px;
+
+    margin-bottom: 30px;
+
+    filter:
+
+        drop-shadow(0 0 10px var(--emerald-bright))
+
+        drop-shadow(0 0 30px rgba(0, 208, 132, 0.4));
+
+}
+
+
+.final-cta > p {
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.final-cta h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-weight: 400;
+
+    font-size: clamp(40px, 6vw, 80px);
+
+    line-height: 1.1;
+
+    margin-bottom: 40px;
+
+}
+
+
+.final-cta h2 span {
+
+    color: var(--emerald-bright);
+
+    text-shadow: 0 0 30px rgba(0, 208, 132, 0.3);
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding: 60px 8%;
+
+    border-top: 1px solid rgba(57, 255, 156, 0.08);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.footer-logo {
+
+    text-align: center;
+
+}
+
+
+.footer-logo span {
+
+    font-size: 25px;
+
+}
+
+
+.footer-logo h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 16px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.footer-logo p {
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+
+}
+
+
+.copyright,
+.footer-tagline {
+
+    color: #627b70;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   PARTICLES
+========================================= */
+
+.particles {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+}
+
+
+.particle {
+
+    position: absolute;
+
+    width: 2px;
+
+    height: 2px;
+
+    border-radius: 50%;
+
+    background: var(--neon-green);
+
+    box-shadow: 0 0 8px var(--neon-green);
+
+    opacity: 0.4;
+
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+}
+
+
+@keyframes rotateRing {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes soundWave {
+
+    0%,
+    100% {
+        transform: scaleY(0.5);
+    }
+
+    50% {
+        transform: scaleY(1.2);
+    }
+
+}

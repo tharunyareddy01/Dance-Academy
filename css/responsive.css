@@ -1,0 +1,273 @@
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero-visual {
+        right: 2%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+
+    /* NAVBAR */
+
+    .navbar {
+
+        height: 75px;
+
+        padding: 0 6%;
+
+    }
+
+
+    .nav-links {
+
+        position: fixed;
+
+        top: 75px;
+
+        right: -100%;
+
+        width: 100%;
+
+        height: calc(100vh - 75px);
+
+        background: rgba(2, 14, 10, 0.98);
+
+        backdrop-filter: blur(20px);
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 30px;
+
+        transition: 0.5s;
+
+    }
+
+
+    .nav-links.show {
+
+        right: 0;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 13px;
+
+    }
+
+
+    .live-status {
+
+        display: none;
+
+    }
+
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 100vh;
+
+        padding: 120px 7% 70px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        order: 1;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-meta {
+
+        justify-content: center;
+
+        gap: 25px;
+
+    }
+
+
+    .hero-visual {
+
+        position: relative;
+
+        right: auto;
+
+        width: 80vw;
+
+        height: 80vw;
+
+        margin-top: 50px;
+
+        order: 2;
+
+    }
+
+
+    .scroll-indicator {
+
+        display: none;
+
+    }
+
+
+    /* INTRO */
+
+    .intro-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 90px 7%;
+
+    }
+
+
+    .large-text {
+
+        font-size: 21px;
+
+    }
+
+
+    /* DANCE */
+
+    .dance-preview {
+
+        padding: 90px 7%;
+
+    }
+
+
+    .section-top {
+
+        align-items: start;
+
+        gap: 30px;
+
+        flex-direction: column;
+
+    }
+
+
+    .dance-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .dance-card {
+
+        height: 450px;
+
+    }
+
+
+    /* LIVE */
+
+    .live-academy {
+
+        padding: 90px 7%;
+
+    }
+
+
+    .live-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    /* CTA */
+
+    .final-cta {
+
+        min-height: 60vh;
+
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+
+    }
+
+}
